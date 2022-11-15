@@ -6,5 +6,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class BoardController {
+    @GetMapping("/board/write")
+    public String boardWriteForm() {
 
+        return "boardwrite";
+    }
 }
